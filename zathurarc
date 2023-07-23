@@ -1,0 +1,97 @@
+# GENERAL SETTINGS
+# --------------------------------------------- #
+set selection-clipboard   clipboard
+set window-title-basename true 
+set statusbar-home-tilde  true
+set recolor               true
+set synctex								true
+
+# NORD THEME
+# https://github.com/arcticicestudio/nord/issues/143
+# --------------------------------------------- #
+
+# nord0: #2e3440;
+# nord1: #3b4252;
+# nord2: #434c5e;
+# nord3: #4c566a;
+
+# nord4: #d8dee9;
+# nord5: #e5e9f0;
+# nord6: #eceff4;
+
+# nord7: #8fbcbb;
+# nord8: #88c0d0;
+# nord9: #81a1c1;
+# nord10: #5e81ac;
+
+# nord11: #bf616a;
+# nord12: #d08770;
+# nord13: #ebcb8b;
+# nord14: #a3be8c;
+# nord15: #b48ead;
+
+set default-bg                 "#2e3440"    # nord0
+set statusbar-bg               "#2e3440"    # nord0
+set statusbar-fg               "#d8dee9"    # nord4
+set inputbar-bg                "#2e3440"    # nord0
+set inputbar-fg                "#a3be8c"    # nord14
+set completion-bg              "#2e3440"    # nord0
+set completion-fg              "#d8dee9"    # nord4
+set completion-group-bg        "#2e3440"    # nord0
+set completion-group-fg        "#d8dee9"    # nord4
+set completion-highlight-bg    "#434c5e"    # nord2
+set completion-highlight-fg    "#d8dee9"    # nord4
+set notification-bg            "#3b4252"    # nord2
+set notification-fg            "#eceff4"    # nord6
+set notification-error-bg      "#bf616a"    # nord11
+set notification-error-fg      "#eceff4"    # nord6
+set notification-warning-bg    "#ebcb8b"    # nord13
+set notification-warning-fg    "#2e3440"    # nord0
+set highlight-color            "#88c0d0"    # nord8
+set highlight-active-color     "#88c0d0"    # nord8
+set index-bg                   "#2e3440"    # nord0
+set index-fg                   "#d8dee9"    # nord4
+
+set index-active-bg            "#434c5e"    # nord2
+set index-active-fg            "#d8dee9"    # nord4
+set recolor-darkcolor          "#d8dee9"    # nord4
+set recolor-lightcolor         "#2e3440"    # nord0
+
+set render-loading-bg          "#2e3440"    # nord0
+set render-loading-fg          "#d8dee9"    # nord4
+
+# Decrease highlight prominence (e.g. after Vim forward search)
+set highlight-transparency 0.25
+
+# Light
+set recolor-lightcolor        "#fbfbfc"    # markdown body background
+set recolor-darkcolor         "#2e3440"    # nord0
+set default-bg                "#fbfbfc"    # markdown body background
+
+# Dark
+set recolor-lightcolor        "#2e3440"    # markdown body background
+set recolor-darkcolor         "#fbfbfc"    # nord0
+set default-bg                "#2e3440"    # markdown body background
+
+set recolor false 
+
+map m zoom out
+map M zoom in
+
+# Detenerse en los limites de la pagina
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+unmap <Space>
+set font "FiraCode 10"
+map [normal] <Space>a feedkeys ":exec xsendkey Control+0"<Return>
+map [normal] <Space>r feedkeys ":exec xsendkey Control+1"<Return>
+map [normal] <Space>s feedkeys ":exec xsendkey Control+2"<Return>
+map [normal] <Space>t feedkeys ":exec xsendkey Control+3"<Return>
+map [normal] <Space>d feedkeys ":exec xsendkey Control+4"<Return>
+
+# boomarks (different from markes; can be more than one letter)
+map [normal] bm focus_inputbar ":bmark "
+map [normal] bl focus_inputbar ":blist "
+map [normal] d focus_inputbar ":bdelete "
